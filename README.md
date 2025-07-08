@@ -12,8 +12,7 @@ This is a solution to the [Social links profile challenge on Frontend Mentor](ht
     - [The challenge](#the-challenge)
     - [Screenshot](#screenshot)
     - [Links](#links)
-  - [My process](#my-process)
-    - [Built with](#built-with)
+  - [Built with](#built-with)
   - [🧩 Best Practices Applied](#-best-practices-applied)
   - [✨ Notable Code Snippet](#-notable-code-snippet)
   - [📚 Key Takeaways](#-key-takeaways)
@@ -41,9 +40,7 @@ Users should be able to:
 
 - Live Site URL: [Social Links Profil](https://miwodi-social-links-profil.netlify.app)
 
-## My process
-
-### Built with
+## Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
