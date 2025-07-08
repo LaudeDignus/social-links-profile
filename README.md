@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Screenshot
 
-![preview](./assets/images/preview.jpg)
+![preview](./assets/images/preview.png)
 
 ---
 
