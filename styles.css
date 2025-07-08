@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey-700: hsl(0, 0%, 20%);
+    --Grey-800: hsl(0, 0%, 12%);
+    --Grey-900: hsl(0, 0%, 8%);
+
+    --font-inter: 'Inter', sans-serif;
+    --font-size: 14px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--font-inter);
+    font-size: var(--font-size);
+    min-height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Grey-900);
+}
+
+main{
+    background-color: var(--Grey-800);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    min-width: 214px;
+}
+
+section.profil{
+    color:var(--White);
+    margin-top: 12px;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+}
+.profil h1{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.profil p.location{
+    font-size: 1rem;
+    font-weight: 500;
+    color:var(--Green);
+}
+.profil p.bio{
+    font-size: 0.72rem;
+    font-weight: 400;
+    margin: 12px;
+    text-align: center;
+}
+
+.profil p.bio::before{
+    content: "“ ";
+}
+
+.profil p.bio::after{
+    content: " ”";
+}
+
+img{
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+}
+
+section.social-links{
+    width:90%;
+    margin:0 12px;
+    margin-bottom:12px;
+}
+
+.social-links ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+ul li{
+    list-style: none;
+    background-color:var(--Grey-700);
+    margin:2px;
+    padding: 6px 0;
+    border-radius: 6px;
+    width:100%;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+ul li a{
+    display: block;
+    color:var(--White);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+ul li:hover{
+    background-color:var(--Green);
+    cursor: pointer;
+}
+
+ul li:hover a{
+    color:var(--Grey-900);
+    transition: color 0.3s ease;
+}
+
+@media (max-width: 375px) {
+  main {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .profil h1 {
+    font-size: 1rem;
+  }
+
+  .profil p.location {
+    font-size: 0.9rem;
+  }
+
+  .profil p.bio {
+    font-size: 0.7rem;
+  }
+
+  img {
+    width: 48px;
+    height: 48px;
+  }
+
+  ul li {
+    padding: 10px;
+  }
+
+  ul li a {
+    font-size: 0.9rem;
+  }
+}
